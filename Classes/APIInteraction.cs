@@ -26,7 +26,7 @@ namespace LR11.Classes
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL);
             request.Method = "GET";
 
-            HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+            HttpWebResponse response = (HttpWebResponse)request.GetResponse(); //!!
 
             StreamReader reader = new StreamReader(response.GetResponseStream());
 
