@@ -22,7 +22,7 @@ namespace LR11.Classes
         }
         public string GetFullName()
         {
-            string URL = "http://localhost:4444/TransferSimulator/";
+            string URL = "http://localhost:4444/TransferSimulator/fullName";
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URL);
             request.Method = "GET";
 
